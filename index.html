@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Player Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="playerTag">Player Tag:</label>
+            <input type="text" id="playerTag" name="playerTag" placeholder="Enter Player Tag (e.g., #YOURTAG)">
+        </div>
+        <button class="enter-button">Enter</button>
+    </div>
+
+    <div id="playerInfo" class="hidden">
+        <h2>Player Information</h2>
+        <p><strong>Name:</strong> <span id="playerName"></span></p>
+        <p><strong>Tag:</strong> <span id="playerTagDisplay"></span></p>
+        <p><strong>Trophies:</strong> <span id="playerTrophies"></span></p>
+        <p><strong>Highest Trophies:</strong> <span id="playerHighestTrophies"></span></p>
+        <p><strong>Exp Level:</strong> <span id="playerExpLevel"></span></p>
+        <p><strong>Club:</strong> <span id="playerClub"></span></p>
+        <p><strong>Error:</strong> <span id="playerError"></span></p>
+    </div>
+    <script src="api.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
